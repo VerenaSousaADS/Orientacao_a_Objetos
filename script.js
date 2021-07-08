@@ -73,3 +73,29 @@ const quadrado = new Quadrado(2, 4);
 quadrado.cor = 'Azul';
 console.log(quadrado);
 */
+
+/* Aula 04 - Métodos  
+
+// Método é uma função do objeto, representa suas funcionalidades
+
+class Quadrado{
+    constructor(base, altura){
+      //is Not a Number = Não é um Número  
+        if(isNaN(base) || isNaN(altura)) throw "Base e altura precisam ser números" //Lança um erro 
+        this.base = base;
+        this.altura = altura;
+        this.cor = undefined; //atributo opicional 
+    }
+    calculaArea(){
+        return this.base*this.altura;
+    }
+
+    duplicaBase(){
+        this.base = 2*this.base;
+    }
+}
+
+const quadrado = new Quadrado(11, 12);
+quadrado.duplicaBase(); //Chamar o método
+// quadrado.cor = 'Azul';
+console.log(quadrado.calculaArea());*/
