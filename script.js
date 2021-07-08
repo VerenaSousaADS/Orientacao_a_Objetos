@@ -54,3 +54,22 @@ const pessoa2 = new Pessoa('Laura', 36);
 console.log(pessoa2);
 
 */
+
+/* Aula 03 - Atributos 
+
+//
+
+class Quadrado{
+    constructor(base, altura){
+      //is Not a Number = Não é um Número  
+        if(isNaN(base) || isNaN(altura)) throw "Informação não numérica" //Lança um erro 
+        this.base = base;
+        this.altura = altura;
+        this.cor = undefined; //atributo opicional 
+    }
+}
+
+const quadrado = new Quadrado(2, 4);
+quadrado.cor = 'Azul';
+console.log(quadrado);
+*/
