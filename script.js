@@ -33,3 +33,24 @@ const agenda // objeto  = {
 console.log(agenda.contatos);
 */
 
+/* Aula 02 - Classe e Construtor
+
+// Classe é uma ideia do objeto, ela é uma construtora de um objeto, nela são passados os parâmetros que são o astributos do objeto, assim o código se torna reutilizável
+
+
+
+class Pessoa{
+    constructor(nome, idade){
+        this.nome = nome; //A esquerda é o atributo e a direita é um parâmetro de entrada pra esse atributo
+        this.idade = idade;
+    }
+}
+
+const pessoa1 = new Pessoa('Verena', 20);
+pessoa1.idade = 21; //atribuir novos valores a classe
+console.log(pessoa1);
+
+const pessoa2 = new Pessoa('Laura', 36);
+console.log(pessoa2);
+
+*/
