@@ -128,7 +128,7 @@ console.log(quadrado.getCor());
 
 class Quadrado{
     constructor(lado, altura){
-        let cor = 'azul';
+        let cor = 'azul'; //tipo de encapsulamento
         this.lado = lado;
         this.altura = altura;
         this.getCor = () => {return cor;}
@@ -138,4 +138,38 @@ class Quadrado{
 const quadrado = new Quadrado(3, 4);
 console.log(quadrado.getCor());
 
+*/
+
+/* Aula 06 - Métodos de Acesso 
+Em JavaScript denominados Accessors
+*/
+/*
+class Quadrado{
+    constructor(lado, altura){
+        let cor = 'blue'; //tipo de encapsulamento (informação privada)
+        this.lado = lado;
+        this.altura = altura;
+        this.getCor = () => {return cor;}
+        this.setCor = (c) => {cor = c;}
+    }
+}
+
+const quadrado = new Quadrado(3, 4); //instanciar o objeto
+quadrado.setCor('red'); // escrever dentro do atributo privado
+console.log(quadrado.getCor());
+
+class Quadrado{
+    constructor(lado, altura){
+        this._cor = 'blue'; //tipo de encapsulamento (informação privada)
+        this.lado = lado;
+        this.altura = altura;
+    }
+    get cor() {return this._cor;}
+    set cor(cor) {this._cor = cor;} //redefinir a propriedade interna
+}
+
+const quadrado = new Quadrado(3,4);
+console.log(quadrado.cor);
+quadrado.cor = 'red'
+console.log(quadrado.cor);
 */
