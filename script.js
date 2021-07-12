@@ -99,3 +99,43 @@ const quadrado = new Quadrado(11, 12);
 quadrado.duplicaBase(); //Chamar o método
 // quadrado.cor = 'Azul';
 console.log(quadrado.calculaArea());*/
+
+/* Aula 05 - Encapsulamento*/
+/*
+function Quadrado(base, altura){
+    this.base = base;
+    this.altura = altura;
+    let cor = 'azul'; //variável local, não pode ser acessada fora do escopo
+}
+
+const quadrado = new Quadrado(3, 4);
+console.log(quadrado.cor);
+*/
+
+/*
+function criaQuadrado(base, altura){
+    let cor = 'azul';
+
+    return{
+        base,
+        altura,
+        getCor: function(){return cor;}
+    };
+}
+
+const quadrado = criaQuadrado(3, 4);
+console.log(quadrado.getCor());
+
+class Quadrado{
+    constructor(lado, altura){
+        let cor = 'azul';
+        this.lado = lado;
+        this.altura = altura;
+        this.getCor = () => {return cor;}
+    }
+}
+
+const quadrado = new Quadrado(3, 4);
+console.log(quadrado.getCor());
+
+*/
