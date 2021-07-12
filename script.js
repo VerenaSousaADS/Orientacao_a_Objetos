@@ -173,3 +173,38 @@ console.log(quadrado.cor);
 quadrado.cor = 'red'
 console.log(quadrado.cor);
 */
+
+/* Aula 07 - Herança e Polimorfismo */
+
+/*
+
+Herança: Nova classe que herda os atributos e métodos da classe pai, essa nova classe é chamada de filha
+
+Polimorfismo: Se aplica na orientação a objetos no uso de Herança e na implementação de interfaces (caso que não ocorre em JavaScript). São classes irmãs, ou seja, uma classe pai que possui diversas formas, ou seja, filhas
+*/
+/*
+class Pessoa{
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+}
+
+class Cidadao extends Pessoa{
+    constructor(nome, idade, rg, cpf){
+        super(nome, idade); //Chamar os atributos da classe pai
+        this.rg = rg;
+        this.cpf = cpf;
+    }
+}
+
+// const cidadao = new Cidadao('Lucas', 26, '0000', '1111');
+// console.log(cidadao);
+
+//Todo cidadao É pessoa, mas nem toda pessoa É cidadao
+
+const cidadao = new Cidadao('Lucas', 26, '0000', '1111');
+console.log(cidadao instanceof Cidadao);// Necessariamente deve retornar true
+// console.log(cidadao instanceof Pessoa); // Verifica se cidadao É pessoa
+*/
